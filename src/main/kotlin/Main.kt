@@ -4,15 +4,16 @@ fun main() {
     while(true){
         try {
             println("연산자를 선택해주세요.")
-            println("1. + 2. - 3. * 4. / 5. 종료")
+            println("1. + 2. - 3. * 4. / 5. % 6. 종료")
 
             val operatorInput: Int? = readLine()?.toInt()
-            if(operatorInput == 5) return
+            if(operatorInput == 6) return
             val operator: String = when(operatorInput) {
                 1 -> "+"
                 2 -> "-"
                 3 -> "*"
                 4 -> "/"
+                5 -> "%"
                 else -> throw IllegalArgumentException("유효하지 않은 연산자입니다.")
             }
 
