@@ -2,7 +2,11 @@ fun main() {
     while (true) {
         try {
             val operator: String = getOperator()
-            if(operator == "exit") return
+            if(operator == "exit") {
+                println("종료되었습니다.")
+                println("\n===================")
+                return
+            }
 
             val (num1, num2) = getNumbers()
 
